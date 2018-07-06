@@ -62,7 +62,6 @@ for i in text:
         text=text.replace(words , '')
         step=-1
 
-print(new_text)
 
 make = os.system('rm 313')
 make = os.system('touch 313')
