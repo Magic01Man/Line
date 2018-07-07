@@ -10,6 +10,11 @@ For downloading it open terminal and type followed command in it:
 https://github.com/Magic01Man/Line.git
 
 ```
+# install
+for install open terminal and type 
+```
+python install.py
+```
 # Option
 ```
 -h -------->  Help
