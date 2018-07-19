@@ -83,7 +83,6 @@ output:
 
 and .......
 
-You can see your  output file  in your folder that save Line script.
 
 
 
