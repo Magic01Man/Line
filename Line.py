@@ -37,6 +37,8 @@ Big = give_args.Big
 Short = give_args.Short
 Equal = give_args.Equal
 
+os.system('rm 313')
+
 
 with open(location) as file:
     line = file.read().splitlines()
