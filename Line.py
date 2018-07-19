@@ -37,56 +37,35 @@ Big = give_args.Big
 Short = give_args.Short
 Equal = give_args.Equal 
 
-try:
-    fo = open(location , 'r+') 
-    text = fo.read()
-except IOError:
-    print("location's file not find")
-    sys.exit()
+with open(location) as file:
+    line = file.read().splitlines()
 
-step = -1
-new_text = []
+def equal():
+    number = 0
+    for show in line:
+        if len(show) == Equal:
+            number+=1
+            print('{} : {}' . format(number , show))
 
-for i in text:
-    count = len(text)
-    count = count-1
-    step+=1
-    if step>count:
-        break
-
-    words = text[step]
-    if i == '\n':
-        words = text[0:step]
-        new_text.append(words)
-        words = text[0:step+1]
-        text=text.replace(words , '')
-        step=-1
-
-
-make = os.system('rm 313')
-make = os.system('touch 313')
+def big():
+    number = 0
+    for show in line:
+        if len(show) > Big:
+            number+=1
+            print('{} : {}' . format(number , show))
+            
+def short():
+    number = 0
+    for show in line:
+        if len(show) < Short:
+            number+=1
+            print('{} : {}' . format(number , show))
 
 if Equal:
-    for text_2 in new_text:
-        if len(text_2) == Equal:
-            file_1 = open('313' , 'a')
-            print(text_2)
-            text_new = text_2 + '\n'
-            file_1.write(text_new)
-        
+    equal()
 
 if Big:
-    for text in new_text:
-        if len(text) > Big:
-            file_1 = open('313' , 'a')
-            print(text)
-            text_new = text + '\n'
-            file_1.write(text_new)
+    big()
 
-if Short: 
-    for text_1 in new_text:
-        if len(text_1) < Short:
-            file_1 = open('313' , 'a')
-            print(text_1)
-            text_new = text_1 + '\n'
-            file_1.write(text_new)
+if Short:
+    short()
