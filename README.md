@@ -25,59 +25,58 @@ python Install.py
 ```
 #Usage
 
-Line.py -L LOCATION [-B BIG] [-S SHORT] [-E EQUAL]
+Line.py -L LOCATION [-B BIG] [-S SHORT] [-E EQUAL] 
 
 ## EXAMPLE
 number 1:
 ```
-python Line.py -L file.txt -E 3
+python Line.py -L file.txt -E 3 
 ```
 output:
 ```
-cpu
-bra
-use
+1 : cpu
+2 : bra
+3 : use
 ```
 number 2:
 ```
-python Line.py -L file.txt -B 4
+python Line.py -L file.txt -B 4 
 ```
 output:
 ```
-password
-movie
-Linux
-boadrd
-monitor
+1 : password
+2 : movie
+3 : Linux
+4 : boadrd
+5 : monitor
 ```
 number 3:
 ```
-python Line.py -L file.txt -S 4
+python Line.py -L file.txt -S 4 
 
 ```
 output:
 ```
-cpu
-bra
-use
-to
-n
+1 : cpu
+2 : bra
+3 : use
+4 : to
 ```
 number 4:
 ```
-python -L file.txt -E 4 -B 4
+python -L file.txt -E 4 -B 4 
 ```
 output:
 ```
-password
-movie
-Linux
-boadrd
-monitor
-Line
-meto
-hall
-kali
+1 : password
+2 : movie
+3 : Linux
+4 : boadrd
+5 : monitor
+6 : Line
+7 : meto
+8 : hall
+9 : kali
 
 ```
 
