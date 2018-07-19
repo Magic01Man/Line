@@ -22,16 +22,15 @@ python Install.py
 -B -------->  for biger than you'r number >
 -S -------->  for short than you'r number <
 -E -------->  for equal you'r number =
--O -------->  Location Output
 ```
 #Usage
 
-Line.py -L LOCATION [-B BIG] [-S SHORT] [-E EQUAL] -O OUTPUT
+Line.py -L LOCATION [-B BIG] [-S SHORT] [-E EQUAL] 
 
 ## EXAMPLE
 number 1:
 ```
-python Line.py -L file.txt -E 3 -O /root/Desktop/313
+python Line.py -L file.txt -E 3 
 ```
 output:
 ```
@@ -41,7 +40,7 @@ output:
 ```
 number 2:
 ```
-python Line.py -L file.txt -B 4 -O /root/Desktop/313
+python Line.py -L file.txt -B 4 
 ```
 output:
 ```
@@ -53,7 +52,7 @@ output:
 ```
 number 3:
 ```
-python Line.py -L file.txt -S 4 -O /root/Desktop/313
+python Line.py -L file.txt -S 4 
 
 ```
 output:
@@ -65,7 +64,7 @@ output:
 ```
 number 4:
 ```
-python -L file.txt -E 4 -B 4 -O /root/Desktop/313
+python -L file.txt -E 4 -B 4 
 ```
 output:
 ```
