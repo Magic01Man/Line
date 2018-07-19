@@ -7,8 +7,13 @@ just enter the number of characters you want to display.
 For downloading it open terminal and type followed command in it:
 ```
 
-https://github.com/Magic01Man/Line.git
+git clone https://github.com/Magic01Man/Line.git
 
+```
+# install
+for install open terminal and type 
+```
+python Install.py
 ```
 # Option
 ```
