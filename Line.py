@@ -29,22 +29,15 @@ parser.add_argument('-L' , action = "store" , dest= 'location', required = True 
 parser.add_argument('-B' , action = "store" , dest = 'Big' , type = int , required = False, help = "for biger than you'r number   > ")
 parser.add_argument('-S' , action = "store" , dest = 'Short' , type = int,required = False, help =  "for short than you'r number  <" )
 parser.add_argument('-E' , action = "store" , dest = 'Equal' , type = int , required = False, help = "for equal you'r number  =")
-<<<<<<< HEAD
 parser.add_argument('-O' , action = "store" , dest= 'output', required = True , help = "for you'r location's output ") 
-=======
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
 
 give_args = parser.parse_args() 
 location = give_args.location
 Big = give_args.Big
 Short = give_args.Short
 Equal = give_args.Equal
-<<<<<<< HEAD
 out = give_args.output
-=======
 
-os.system('rm 313')
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
 
 
 try:
@@ -65,10 +58,6 @@ def equal(filename):
                 print("you should enter name's you'r text file in location's output")
                 sys.exit()
             print('{} : {}' . format(number , show))
-<<<<<<< HEAD
-=======
-            f = open('313' , 'a')
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
             f.write(show + '\n')
 
 def big(filename):
@@ -82,10 +71,6 @@ def big(filename):
                 print("you should enter name's you'r text file in location's output")
                 sys.exit()
             print('{} : {}' . format(number , show))
-<<<<<<< HEAD
-=======
-            f = open('313' , 'a')
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
             f.write(show + '\n')
             
 def short(filename):
@@ -99,11 +84,6 @@ def short(filename):
                 print("you should enter name's you'r text file in location's output")
                 sys.exit()
             print('{} : {}' . format(number , show))
-<<<<<<< HEAD
-            sys.exit()
-=======
-            f = open('313' , 'a')
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
             f.write(show + '\n')
 
 
@@ -115,8 +95,5 @@ if Big:
     big(out)
 
 if Short:
-<<<<<<< HEAD
     short(out)
-=======
-    short()
->>>>>>> e7a0b17d703718d3625f28a671c83e32f91158cf
+
