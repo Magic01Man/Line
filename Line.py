@@ -30,14 +30,12 @@ parser.add_argument('-L' , action = "store" , dest= 'location', required = True 
 parser.add_argument('-B' , action = "store" , dest = 'Big' , type = int , required = False, help = "for biger than you'r number   > ")
 parser.add_argument('-S' , action = "store" , dest = 'Short' , type = int,required = False, help =  "for short than you'r number  <" )
 parser.add_argument('-E' , action = "store" , dest = 'Equal' , type = int , required = False, help = "for equal you'r number  =")
-parser.add_argument('-O' , action = "store" , dest = 'Output' , type = int , required = True, help = "Location Output")
 
 give_args = parser.parse_args() 
 location = give_args.location
 Big = give_args.Big
 Short = give_args.Short
 Equal = give_args.Equal
-Out = give_args.Output
 
 
 with open(location) as file:
@@ -49,7 +47,7 @@ def equal():
         if len(show) == Equal:
             number+=1
             print('{} : {}' . format(number , show))
-            f = open('Out' , 'a')
+            f = open('313' , 'a')
             f.write(show + '\n')
 
 def big():
@@ -58,7 +56,7 @@ def big():
         if len(show) > Big:
             number+=1
             print('{} : {}' . format(number , show))
-            f = open('Out' , 'a')
+            f = open('313' , 'a')
             f.write(show + '\n')
             
 def short():
@@ -67,7 +65,7 @@ def short():
         if len(show) < Short:
             number+=1
             print('{} : {}' . format(number , show))
-            f = open('Out' , 'a')
+            f = open('313' , 'a')
             f.write(show + '\n')
 
 if Equal:
